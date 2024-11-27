@@ -1,4 +1,4 @@
-#No 4. Menyelesaikan konflik
+#No 3. Merging
 data_panen = {    
     'lokasi1':{
         'nama_lokasi': 'Kebun A',
