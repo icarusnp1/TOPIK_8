@@ -1,4 +1,4 @@
-#No. 3 Merging Baru
+#No. 3 Merging main
 data_panen = {    
     'lokasi1':{
         'nama_lokasi': 'Kebun A',
