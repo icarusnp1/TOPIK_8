@@ -1,4 +1,4 @@
-#No 4. Skenario konflik 
+#No 3. Merging and Branch
 data_panen = {    
     'lokasi1':{
         'nama_lokasi': 'Kebun A',
