@@ -1,4 +1,4 @@
-#No. 3 Merging main
+#No. 3 Merging main v2
 data_panen = {    
     'lokasi1':{
         'nama_lokasi': 'Kebun A',
