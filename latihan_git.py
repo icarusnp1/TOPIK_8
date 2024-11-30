@@ -1,4 +1,3 @@
-#No. 3 Merging main v2
 data_panen = {    
     'lokasi1':{
         'nama_lokasi': 'Kebun A',
@@ -59,21 +58,26 @@ print(data_panen['lokasi3']['nama_lokasi'])
 
 #4. Buat variabel PADI dan KEDELAI
 print('--JUMLAH HASIL PADI DAN KEDELAI--')
-padi = 0
-kedelai = 0
+padi_1 = 0
+kedelai_1 = 0
+jagung_1 = 0
+for i,j in data_panen.items():
+    padi_1    = data_panen[i]['hasil_panen']['padi'] + padi_1
+    kedelai_1   = data_panen[i]['hasil_panen']['kedelai'] + kedelai_1
+    jagung_1  = data_panen[i]['hasil_panen']['jagung'] + jagung_1
 
 #5. Masukan jumlah hasil panen PADI dan KEDELAI
-for i,j in data_panen.items():
-    padi    = data_panen[i]['hasil_panen']['padi'] + padi
-    kedelai   = data_panen[i]['hasil_panen']['kedelai'] + kedelai
-    jagung   = data_panen[i]['hasil_panen']['jagung'] + jagung
+padi = padi_1
+kedelai = kedelai_1
+jagung = jagung_1
     
 print(f'PADI = {padi}')
 print(f'PADI = {kedelai}')
 
 #6. Percabangan jumlah panen PADI lebih dari 1300 atau jagung lebih dari 800 di suatu lokasi maka perlu perhatian khusus,
 # jika tidak dalam kondisi baik.
-if padi > 1300:
-    print("Perlu perhatian khusus")
-elif jagung > 800:
-    print("Kondisi baik")
+lok = 0
+for i,j in data_panen.items():
+    if data_panen[i]['hasil_panen']['padi'] > 1300 or data_panen[i]['hasil_panen']['jagung'] > 800:
+        print(f"Lokasi {j['nama_lokasi']} perlu perhatian khusus")
+        lok += 1
